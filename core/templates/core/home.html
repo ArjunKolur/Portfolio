@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="mt-5">
+    <div class=" text-center">
+        <img src="{% static 'core/images/dp.jpg' %}" alt="Profilepic" class="img-thumbnail" width="250px" height="150px">
+    </div>
+    
+        <div class="mt-5 text-white mx-5 text-justify ">
+            <h1 class="font-weight-bold st-font">Hello,</h1>
+    
+            <div class= "px-4 " style="line-height: 2rem;">
+                <p style="text-indent: 100px;" >
+                    "I am <b class="text-warning"> Chandrahas </b>Python/Django web developer with <b class="text-warning"> 2 years</b> of experience. Highly motivated and self-taught, I possess a passion for programming and continuous learning—a perfect combination. Unafraid to dive into challenging tasks, I thrive on figuring out solutions. Always eager for the next challenge, I disdain the phrase 'It can't be done.' With a proven track record in Python and Django development, I bring a dynamic skill set and a proactive approach to problem-solving, ensuring success in every project undertaken."
+                   
+                    <p>I can demonstrates a profound understanding of web development using the <b class="text-warning">Django framework</b>. With a keen eye for detail and a commitment to delivering high-quality code,adeptly navigates the intricacies of building robust and scalable web applications. Proficient in utilizing Django's features,good at excels in crafting secure and efficient solutions. With a passion for staying current on industry trends.</p>
+                </p>
+            </div>
+            
+        </div>
+       <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mar-5">Hire ME</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mar-5">Contact</a>
+
+    </div>
+    
+{% endblock content %}
